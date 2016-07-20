@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="mfl_app">
+
+<head>
+	<meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+	<meta charset="utf-8" />
+	<title>MFL</title>
+	<meta name="description" content="MFL" />
+	<!-- C3 Stylesheet -->
+	<link rel="stylesheet" href="css/c3.css" type="text/css" />
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" />
+	<!-- Stylesheets specific to R4D Visualizer -->
+	<link type="text/css" rel="stylesheet" href="css/custom/r4d.css" />
+	<!-- Stylesheets specific to the DHIS2 menu -->
+	<link type="text/css" rel="stylesheet" href="../../../dhis-web-commons/font-awesome/css/font-awesome.min.css" />
+	<link type="text/css" rel="stylesheet" media="screen" href="../../../dhis-web-commons/css/menu.css" />
+	<!-- Stylesheets related to the DHIS2 menu -->
+	<link type="text/css" rel="stylesheet" href="../../../dhis-web-commons/font-awesome/css/font-awesome.min.css" />
+	<link type="text/css" rel="stylesheet" media="screen" href="../../../dhis-web-commons/css/menu.css" />
+</head>
+
+<body>
+	<nav class="navbar navbar-dhis" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<div class="navbar-brand" href="#/dashboard">MFL</div>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active">
+					<a href="#/dashboard">Dashboard</a>
+				</li>
+				<li>
+					<a href="#/settings">Settings</a>
+				</li>
+			</ul>
+			<!--<div id="dhisDropDownMenu"></div>-->
+			<div d2-menu></div>
+		</div>
+	</nav>
+	<div ng-view> </div>
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<!-- <script src="js/highcharts.js"></script> -->
+
+	<script src="js/d3.js" charset="utf-8"></script>
+	<script src="js/c3.min.js"></script>
+	<!-- DHIS2 Settings initialization for a baseUrl that is used for the menu -->
+
+	<script>
+		window.dhis2 = window.dhis2 || {};
+		dhis2.settings = dhis2.settings || {};
+		dhis2.settings.baseUrl = 'dhis';
+	</script>
+	<!-- DHIS2 Menu scripts -->
+
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.translate.js"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.menu.js"></script>
+	<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.menu.ui.js"></script>
+	<!-- Facility scripts -->
+
+	<!--<script type="text/javascript" src="js/custom/facilities.js"></script>-->
+	<script type="text/javascript" src="js/custom/services.js"></script>
+	<script type="text/javascript" src="js/custom/mflapp.js"></script>
+
+</html>

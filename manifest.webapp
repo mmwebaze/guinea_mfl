@@ -1,0 +1,23 @@
+{
+	"version" : "0.1",
+	"name" : "MFL",
+	"description" : "MEASURE EValuation MFL",
+	"launch_path" : "index.html",
+	"appType" : "APP",
+	"icons" : {
+		"16" : "/img/icons/mortar-16.png",
+		"48" : "/img/icons/jsi.png",
+		"128" : "/img/icons/mortar-128.png"
+	},
+	"developer" : {
+		"name" : "MEASURE EValuation",
+		"url" : "http://jsi.com"
+	},
+	"default_locale" : "en",
+	"activities" : {
+		"dhis" : {
+			"namespace" : "mfl",
+			"href" : "*"
+		}
+	}
+}

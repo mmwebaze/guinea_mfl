@@ -1,0 +1,11 @@
+.navbar-dhis {
+	background: #40627c;
+}
+
+.navbar-dhis .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-brand {
+	color: white;
+}
