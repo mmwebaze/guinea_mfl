@@ -4,6 +4,7 @@
 
 	var app = angular.module('mfl_app', ['d2Menu', 'ngRoute', 'mflServices']);
 
+	//Need routing specific file
 	app.config(function ($routeProvider) {
 		$routeProvider
 			.when("/dashboard", {
